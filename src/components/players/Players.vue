@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="col-sm-6 col-md-6 isAllStar east">
+        <div class="col-sm-6 col-md-6 allstar east">
             <div class="panel panel-success">
                 <div class="panel-heading">
                     <h3 class="panel-title text-center">
@@ -10,7 +10,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-md-6 isAllStar west text-center">
+        <div class="col-sm-6 col-md-6 allstar west text-center">
             <div class="panel panel-success">
                 <div class="panel-heading">
                     <h3 class="panel-title">
@@ -58,7 +58,7 @@
         methods: {
             team(i) {
                 return {
-                    'isAllStar' : i<24,
+                    'allstar' : i<24,
                     'east' : !(i%2),
                     'west' : i%2
                 }
@@ -84,15 +84,15 @@
 </style>
 
 <style>
-    .isAllStar.east .panel-heading{
+    .allstar.east .panel-heading{
         background: rgb(2,0,36);
-        background: linear-gradient(90deg, rgba(2,0,100,1) 0%, rgba(9,9,121,1) 35%, rgba(0,50,255,1) 100%);
+        background: linear-gradient(90deg, rgba(2,0,200,1) 0%, rgba(9,9,225,1) 25%, rgba(0,50,255,0.6) 90%);
         color: #ffffff;
     }
 
-    .isAllStar.west .panel-heading{
+    .allstar.west .panel-heading{
         background: rgb(2,0,36);
-        background: linear-gradient(90deg, rgba(100,0,2,1) 0%, rgba(200,9,9,1) 35%, rgba(255,50,0,1) 100%);
+        background: linear-gradient(90deg, rgba(200,0,2,1) 0%, rgba(225,9,9,1) 25%, rgba(255,50,0,0.6) 90%);
         color: #ffffff;
     }
 </style>
