@@ -2,6 +2,10 @@
 
 > A Vue.js project
 
+## Demo
+
+[a link](http://www.pinpoy.com/)
+
 ## Build Setup
 
 ``` bash
