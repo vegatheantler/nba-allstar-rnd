@@ -42,16 +42,16 @@
                 if (!allstars || allstars === null || typeof allstars === 'undefined' || allstars.length == 0) {
                     return {east: 0, west: 0};
                 }
-                console.log(allstars)
 
                 let eastSum = 0;
                 let westSum = 0;
-                for (let i=0; i<12; i++) {
-                    if (allstars.length == 0) {
+                for (let i=0; i<24; i+=2) {
+                    if (allstars.length <= i) {
                         break;
                     }
-                    eastSum += (allstars.shift()).rating;
-                    westSum += (allstars.shift()).rating;
+                    console.log(allstars[i]);
+                    eastSum += allstars[i].rating;
+                    westSum += allstars[i+1].rating;
                 }
                 return {east: (eastSum/12).toFixed(0), west: (westSum/12).toFixed(0)};
             }
