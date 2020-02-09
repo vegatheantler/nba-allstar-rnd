@@ -6,6 +6,12 @@
                     {{ player.firstName + ' ' + player.lastName }}
                     <small>(Rating: {{ player.rating  }})</small>
                 </h3>
+                
+                <div
+                    :style="{backgroundImage: 'url(https://cdn.nba.net/assets/logos/teams/secondary/web/'+ player.teamId +'.svg)'}"
+                    class="team-bg"
+                >
+                </div>
             </div>
         </div>
     </div>
@@ -20,8 +26,22 @@
 <style scoped>
     .panel-title {
         background-repeat: no-repeat;
-        background-position: center right;
+        background-position: center left;
         padding: 20px;
+        background-size: contain;
+        text-align: center;
+    }
+
+    .panel-heading {
+        position: relative;
+    }
+
+    .team-bg {
+        height: 100%;
+        position: absolute;
+        right: 0;
+        width: 75px;
+        top: 0;
         background-size: contain;
     }
 </style>

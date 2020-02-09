@@ -49,7 +49,6 @@
                     if (allstars.length <= i) {
                         break;
                     }
-                    console.log(allstars[i]);
                     eastSum += allstars[i].rating;
                     westSum += allstars[i+1].rating;
                 }
