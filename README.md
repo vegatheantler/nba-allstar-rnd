@@ -4,7 +4,7 @@
 
 ## Demo
 
-[a link](http://www.pinpoy.com/)
+[Click Here](http://www.pinpoy.com/)
 
 ## Build Setup
 
